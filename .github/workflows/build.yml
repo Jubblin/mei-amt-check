@@ -10,3 +10,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: make
       run: make
+    - name: GitHub Upload Release Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: mei-amt-check_ubuntu-18.04
+        path: |
+          build/mei-amt-check
