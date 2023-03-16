@@ -9,14 +9,13 @@ on:
     branches: [ "master" ]
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - name: make
       run: make
     - name: GitHub Upload Release Artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: mei-amt-check_latest
         path: ./mei-amt-check
