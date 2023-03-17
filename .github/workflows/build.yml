@@ -23,7 +23,7 @@ jobs:
     - name: GitHub Upload Release Artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: mei-amt-check_latest
+        name: mei-amt-check_${{ matrix.os }}
         path: ./mei-amt-check
         
     # - name: Release Action
