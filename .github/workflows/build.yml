@@ -21,8 +21,8 @@ jobs:
         name: mei-amt-check_latest
         path: ./mei-amt-check
         
-    - name: Release Action
-      uses: ncipollo/release-action@v1
-      with:
-        artifacts: "mei-amt-check"
-        bodyFile: "body.md"
+    # - name: Release Action
+    #   uses: ncipollo/release-action@v1
+    #   with:
+    #     artifacts: "mei-amt-check"
+    #     bodyFile: "body.md"
